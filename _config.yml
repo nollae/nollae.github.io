@@ -23,7 +23,7 @@ timezone: Asia/Seoul
 
 title: NOLLAE                          # the main title
 
-tagline: 헝이많은개발자   # it will display as the sub-title
+tagline: 특이점찾는개발자   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   A minimal, responsive, and powerful Jekyll theme for presenting professional writing.
@@ -34,18 +34,18 @@ url: 'https://nollae.github.io/'
 github:
   username: nollae             # change to your github username
 
-twitter:
-  username: twitter_username            # change to your twitter username
+# twitter:
+  # username: twitter_username            # change to your twitter username
 
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: zeroangry
-  email: example@doamin.com             # change to your email address
+  name: nollae
+  email: m0924vie@gmail.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username      # change to your twitter homepage
-    # - https://github.com/nollae       # change to your github homepage
+    # - https://twitter.com/username      # change to your twitter homepage
+    - https://github.com/nollae       # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
@@ -83,7 +83,7 @@ theme_mode:   light # [light|dark]
 img_cdn: 
 
 # the avatar on sidebar, support local or CORS resources
-avatar: '/assets/img/profile_bear.png'
+avatar: '/assets/img/profile.png'
 
 # boolean type, the global switch for ToC in posts.
 toc: true
