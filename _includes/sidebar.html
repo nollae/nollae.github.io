@@ -18,7 +18,7 @@
     </a>
 
     <h1 class="site-title">
-      <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      <a href="{{ '/' | relative_url }}" >{{ site.title }}</a>
     </h1>
     <p class="site-subtitle fst-italic mb-0">{{ site.tagline }}</p>
   </header>
@@ -29,18 +29,22 @@
       <!-- home -->
       <li class="nav-item{% if page.layout == 'home' %}{{ " active" }}{% endif %}">
         <a href="{{ '/' | relative_url }}" class="nav-link">
-          <i class="fa-fw fas fa-home"></i>
-          <span>{{ site.data.locales[include.lang].tabs.home | upcase }}</span>
+          <i class="fa-fw fas fa-home"
+            style="color: rgba(255, 255, 255, 99%);"></i>
+          <span style="color: rgba(255, 255, 255, 99%);">
+            {{ site.data.locales[include.lang].tabs.home | upcase }}</span>
         </a>
       </li>
       <!-- the real tabs -->
       {% for tab in site.tabs %}
         <li class="nav-item{% if tab.url == page.url %}{{ " active" }}{% endif %}">
           <a href="{{ tab.url | relative_url }}" class="nav-link">
-            <i class="fa-fw {{ tab.icon }}"></i>
+            <i class="fa-fw {{ tab.icon }}"
+                style="color: rgba(255, 255, 255, 99%);"></i>
             {% capture tab_name %}{{ tab.url | split: '/' }}{% endcapture %}
 
-            <span>{{ site.data.locales[include.lang].tabs.[tab_name] | default: tab.title | upcase }}</span>
+            <span style="color: rgba(255, 255, 255, 99%);">
+              {{ site.data.locales[include.lang].tabs.[tab_name] | default: tab.title | upcase }}</span>
           </a>
         </li>
         <!-- .nav-item -->
