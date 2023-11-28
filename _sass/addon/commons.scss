@@ -297,6 +297,8 @@ sup {
         }
 
         td {
+          white-space: pre-wrap;
+          
           @extend %table-cell;
         }
       }
