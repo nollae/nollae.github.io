@@ -7,11 +7,21 @@ tags: [HTML]
 ---
 <style>
     .bg-yllw { background-color: #fff5b1 }
+    .bg-gray { background-color: #f6f8fa }
+    .ft-small{ font-size: 0.9rem }
 </style>
+
+
+
+해당 본문은 [**HTML5 기본 문법**](https://poiemaweb.com/html5-syntax) 를 필사하였다.
+<br/>
+<em class="ft-small">집중력을 높이기 위해, poiemaweb의 본문내용을 직접 타이핑하면서 공부하고 있다.</em>
+
 # **HTML 정의**
 
-HTML(HyperText Markup Language)은 <span class="bg-yllw">웹페이지를 기술하기 위한 **마크업 언어**</span>이다. 
-
+HTML(HyperText Markup Language)은 웹페이지를 기술하기 위한 
+<span class="bg-yllw">**마크업 언어**</span>이다. 
+<br/>
 즉, 웹페이지의 **내용(content)** 과 **구조(structure)**를 담당하는 언어로써 <u>HTML 태그를 통해 정보를 구조화하는 것</u>이다.
 
 ---
@@ -61,27 +71,27 @@ HTML(HyperText Markup Language)은 <span class="bg-yllw">웹페이지를 기술�
   </body>
 </html>
 ```
-> 출력 결과 
+<!-- > 출력 결과 
 
 <html>
   <div style="background-color:#f6f8fa;">
     <h1 style="margin-top: 1rem;">Hello World</h1>
     <p>안녕하세요! HTML5</p>
   </div>
-</html>
+</html> -->
 
 
 ---
 
 # **HTML 사용법**
 
-HTML document는 **.html 확장자를 갖는 순수한 텍스트 파일**이다. 
-
+HTML document는 <span class="bg-yllw">**.html 확장자를 갖는 순수한 텍스트 파일**</span>이다. 
+<br/>
 메모장 등으로도 편집할 수 있으나 다양한 편의 기능을 제공하는 <u>editor 또는 IDE(Integrated Development Environment)를 사용하는 것이 일반적</u>이다. 
 
 대표적인 editor 또는 IDE는 아래와 같다.
 
-- Visual Studio Code ⭐️
+- <span class="bg-yllw">Visual Studio Code ⭐️</span>
 - WebStorm
 - Atom
 - Brackets
@@ -93,17 +103,22 @@ HTML document는 **.html 확장자를 갖는 순수한 텍스트 파일**이다.
 
 ## **1. 요소(Element)**
 
-- 시작 태그(**start tag**)
-- 종료 태그(**end tag**) 
-- 태그 사이에 위치한 **content**
+- **`시작 태그(start tag)`**
+- **`종료 태그(end tag)`**
+- **`태그 사이에 위치한 content`**
+
+![img01](/assets/img/posts/front/20231128_01_01.png){: .w-75 .h-100 .shadow .rounded-10 }
+_HTML 요소_
 
 HTML document는 <u><b>요소(Element)들의 집합</b>으로 이루어진다.</u>
 <br/>
-*태그는 대소문자를 구별하지 않으나 W3C: World Wide Web Consortium에서는 HTML4의 경우 소문자를 추천하고 있으므로 HTML5에서도 소문자를 사용하는 것이 일반적이다.*
+*태그는 대소문자를 구별하지 않으나 W3C(World Wide Web Consortium)에서는 HTML4의 경우 소문자를 추천하고 있으므로 HTML5에서도 소문자를 사용하는 것이 일반적이다.*
 
 ### **1-1. 요소의 중첩 (Nested Element)**
 
-요소는 중첩될 수 있다. 즉, **요소는 다른 요소를 포함할 수 있다.** 이때 부자관계가 성립된다. 이러한 부자관계로 정보를 **구조화하는 것**이다.
+요소는 중첩될 수 있다. <span class="bg-yllw">즉, **요소는 다른 요소를 포함할 수 있다.** </span>
+<br/>
+이때 부자관계가 성립되는데, <u>이러한 부자관계로 정보를 구조화하는 것</u>이다.
 
 ```html
 <!DOCTYPE html>
@@ -117,7 +132,7 @@ HTML document는 <u><b>요소(Element)들의 집합</b>으로 이루어진다.</
   </body>
 </html>
 ```
-> 출력 결과 
+<!-- > 출력 결과 
 
 <html>
   <body>
@@ -126,31 +141,40 @@ HTML document는 <u><b>요소(Element)들의 집합</b>으로 이루어진다.</
         <p>반갑습니다!</p>
     </div>
   </body>
-</html>
+</html> -->
 
 
-html 요소는 웹페이지를 구성하는 모든 요소들을 포함한다. 위 예제를 보면 html 요소는 body 요소를 포함하며 body 요소는 h1, p 요소를 포함한다. 이 **중첩 관계(부자 관계)로 웹페이지의 구조(structure)를 표현**한다.
+html 요소는 웹페이지를 구성하는 모든 요소들을 포함한다. 
+위 예제를 보면 html 요소는 body 요소를 포함하며 body 요소는 h1, p 요소를 포함한다. 
+이 <span class="bg-yllw">**중첩 관계(부자 관계)로 웹페이지의 구조(structure)를 표현**</span>한다.
 
-이런 중첩 관계(부자 관계)를 시각적으로 파악하기 쉽게 <u>indent(들여쓰기)</u>를 활용한다. 보기좋은 코드는 읽기 쉬우며 읽기 쉬운 코드는 좋은 코드이다.
+이런 중첩 관계(부자 관계)를 시각적으로 파악하기 쉽게 <u>indent(들여쓰기)</u>를 활용한다. 
+*보기좋은 코드는 읽기 쉬우며 읽기 쉬운 코드는 좋은 코드이다.*
 
 ### **1-2. 빈 요소 (Empty Element)**
 
-**content를 가질 수 없는 요소**를 **빈 요소(Empty element or Self-Closing element)**라 한다. 아래의 예와 같이 빈 요소는 content가 없으며(필요가 없다) <u><b>어트리뷰트(Attribute)만</b>을 가질 수 있다.</u>
+<span class="bg-yllw">**content를 가질 수 없는 요소**</span>를 **빈 요소(Empty element or Self-Closing element)**라 한다. 
+아래의 예와 같이 빈 요소는 content가 없으며(필요가 없다) <u><b>어트리뷰트(Attribute)만</b>을 가질 수 있다.</u>
 
 ```html
 <meta charset="utf-8">
 ```
 대표적인 요소는 다음과 같다.
-- br
-- hr
-- img
-- input
-- link
-- meta
+- `br`
+- `hr`
+- `img`
+- `input`
+- `link`
+- `meta`
 
 ## **2. 어트리뷰트 (Attribute)**
 
-어트리뷰트(Attribute 속성)이란 **요소의 성질, 특징을 정의하는 명세**이다. 요소는 <u>어트리뷰트를 가질 수 있으며 어트리뷰트는 요소에 추가적 정보(예를 들어 이미지 파일의 경로, 크기 등)를 제공</u>한다. 어트리뷰트는 시작 태그에 위치해야 하며 **이름과 값의 쌍을 이룬다.** (e.g. name=”value”)
+어트리뷰트(Attribute, 속성)이란 <span class="bg-yllw">**요소의 성질, 특징을 정의하는 명세**</span>이다. 
+요소는 <u>어트리뷰트를 가질 수 있으며 어트리뷰트는 요소에 추가적 정보(예를 들어 이미지 파일의 경로, 크기 등)를 제공</u>한다. 
+어트리뷰트는 **시작 태그에 위치**해야 하며 **이름과 값의 쌍을 이룬다.** (e.g. name=”value”)
+
+![img02](/assets/img/posts/front/20231128_01_02.png){: .w-75 .h-100 .shadow .rounded-10 } 
+_HTML Attribute_
 
 ```html
 <img src="html.jpg" width="104" height="142">
@@ -159,7 +183,8 @@ html 요소는 웹페이지를 구성하는 모든 요소들을 포함한다. �
 
 ### **2-1. 글로벌 어트리뷰트 (HTML Global Attribute)**
 
-글로벌 어트리뷰트는 **모든 HTML 요소가 공통으로 사용할 수 있는 어트리뷰트**다. 몇몇 요소에는 효과가 적용되지 않을 수 있지만, 글로벌 어트리뷰트는 대체로 모든 요소에 사용될 수 있다.
+글로벌 어트리뷰트는 <span class="bg-yllw">**모든 HTML 요소가 공통으로 사용할 수 있는 어트리뷰트**</span>다. 
+몇몇 요소에는 효과가 적용되지 않을 수 있지만, 글로벌 어트리뷰트는 대체로 모든 요소에 사용될 수 있다.
 
 자주 사용되는 글로벌 어트리뷰트는 아래와 같다.
 
@@ -183,6 +208,10 @@ html 요소는 웹페이지를 구성하는 모든 요소들을 포함한다. �
 <p>Lorem ipsum dolor sit amet</p>
 ```
 
-> 출력 결과 
+<!-- > 출력 결과 
 
-<p style="background-color:#f6f8fa;">Lorem ipsum dolor sit amet</p>
+<p style="background-color:#f6f8fa;">Lorem ipsum dolor sit amet</p> -->
+
+<br/>
+
+🔗 **ref :** [**HTML5 기본 문법**](https://poiemaweb.com/html5-syntax)
