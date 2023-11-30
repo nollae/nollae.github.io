@@ -146,6 +146,7 @@ blankshield(document.querySelectorAll('a[target=_blank]'));
 <span class="ft-small">*성능 상의 이점에 대한 자세한 내용은 [The performance benefits of rel=noopener](https://jakearchibald.com/2016/performance-benefits-of-rel-noopener/)을 참고.*</span>
 
 <br/>
+
 🔗 **ref :** 
 : - [Tabnabbing 공격과 rel=noopener 속성](https://blog.coderifleman.com/2017/05/30/tabnabbing_attack_and_noopener/)
 - [Tabnabbing 기법을 통한 계정 탈취](https://www.igloo.co.kr/security-information/tabnabbing-%EA%B8%B0%EB%B2%95%EC%9D%84-%ED%86%B5%ED%95%9C-%EA%B3%84%EC%A0%95-%ED%83%88%EC%B7%A8/)
