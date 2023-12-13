@@ -8,7 +8,7 @@
   --highlighter-rouge-color: #3f596f;
   --highlight-lineno-color: #808080;
   --inline-code-bg: #f6f6f7;
-  --code-color: #b0b0b0;
+  --code-color: white;
   --code-header-text-color: #6a6a6a;
   --code-header-muted-color: #353535;
   --code-header-icon-color: #565656;
@@ -47,7 +47,7 @@
   .highlight .cpf,
   .highlight .c1,
   .highlight .cs {
-    color: #848484;
+    color: #6272a4;
   }
 
   .highlight .cp {
@@ -55,7 +55,19 @@
   }
 
   .highlight .nt {
-    color: #f4bf75;
+    color: #ff79c6;
+  }
+
+  .highlight .nd {
+    color: #ffb86c;
+  }
+
+  .highlight .nl {
+    color: #66d9ef;
+  }
+
+  .highlight .nb {
+    color: #bd93f9;
   }
 
   .highlight .o,
@@ -112,7 +124,7 @@
   .highlight .sh,
   .highlight .sx,
   .highlight .s1 {
-    color: #90a959;
+    color: #f1fa8c;
   }
 
   .highlight .sa {
@@ -144,7 +156,7 @@
   }
 
   .highlight .na {
-    color: #6a9fb5;
+    color: #50fa7b;
   }
 
   .highlight .m,
