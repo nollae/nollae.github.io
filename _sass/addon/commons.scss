@@ -564,12 +564,13 @@ main {
 
 .embed-result {
   width: 100%;
+
   @extend %rounded;
 
   &.example {
     aspect-ratio: 16 / 9;
-    margin-bottom: 0;
   }
+  
 }
 
 /* --- buttons --- */
