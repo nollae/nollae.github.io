@@ -553,6 +553,10 @@ main {
 
   @extend %rounded;
 
+  &.example {
+    aspect-ratio: 16 / 9;
+  }
+
   &.youtube {
     aspect-ratio: 16 / 9;
   }
