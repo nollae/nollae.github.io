@@ -553,16 +553,22 @@ main {
 
   @extend %rounded;
 
-  &.example {
-    aspect-ratio: 16 / 9;
-  }
-
   &.youtube {
     aspect-ratio: 16 / 9;
   }
 
   &.twitch {
     aspect-ratio: 310 / 189;
+  }
+}
+
+.embed-result {
+  width: 100%;
+  @extend %rounded;
+
+  &.example {
+    aspect-ratio: 16 / 9;
+    margin-bottom: 0;
   }
 }
 
