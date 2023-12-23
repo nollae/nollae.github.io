@@ -230,7 +230,7 @@ container(.container 또는 .container-fluid) 내에 `.row` class를 사용하�
 
 | | Extra small devices Phones (~ 767px) | Small devices Tablets (768px ~) | Medium devices Desktops(992px ~) | Large devices Desktops (1200px ~) |
 |:---|:---|:---|:---|:---|
-| Grid behavior | 항상 수평 적용 |  viewport 너비가 breakpoint 이상이면 수평 적용, 미만이면 stack |||
+| Grid behavior | 항상 수평 적용 | viewport 너비가 breakpoint 이상이면 수평 적용, 미만이면 stack |||
 
 
 
