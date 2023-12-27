@@ -232,6 +232,7 @@ container(.container 또는 .container-fluid) 내에 `.row` class를 사용하�
 |:---|:---|:---|:---|:---|
 | Grid behavior | 항상 수평 적용 | viewport 너비가 breakpoint 이상이면 수평 적용, 미만이면 stack |||
 
+무엇이 문제일까?
 
 
 <br/>
