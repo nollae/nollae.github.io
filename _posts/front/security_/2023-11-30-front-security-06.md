@@ -20,7 +20,7 @@ HTML 문서 내에서 링크(`target이 _blank`인 태그)를 클릭했을 때 *
 
 ## **Tabnabbing 공격 절차**
 
-![img01](/assets/img/posts/front/20231130_06_01.jpeg){: .w-100 .h-100 .shadow .rounded-10 } 
+![img01](/assets/img/posts/front/20231130_06_01.jpeg){: .w-100 .h-100 .rounded-10 } 
 _Tabnabbing 공격 절차_
 
 1. 사용자가 현재 합법적인 브라우저(A) 탭에서 새 탭으로 여는 웹사이트(실제로는 피싱 사이트)(B)를 클릭한다.
